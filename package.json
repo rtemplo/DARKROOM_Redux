@@ -1,0 +1,31 @@
+start{
+  "name": "spectronndash",
+  "version": "1.0.0",
+  "description": "Spectronn Monitor Dashboard",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtemplo/SpectronnDash.git"
+  },
+  "author": "Ray Templo, Andrew Apicello",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rtemplo/SpectronnDash/issues"
+  },
+  "homepage": "https://github.com/rtemplo/SpectronnDash#readme",
+  "scripts": {
+    "server": "node index.js",
+    "client": "npm run start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "node-sass-chokidar": "^1.3.3",
+    "nodemon": "^1.18.4",
+    "postgraphile": "^4.0.0-rc.5.1"
+  }
+}
