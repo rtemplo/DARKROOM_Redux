@@ -1,11 +1,11 @@
 import React from 'react'
-import mutation from '../../queries/createDemoFormPublic'
+import mutation from 'queries/createDemoFormPublic'
 
-import RenderForm from '../../components/RenderForm/RenderForm'
-import GridContainer from '../../components/Grid/GridContainer'
-import GridItem from '../../components/Grid/GridItem'
-import Card from '../../components/Card/Card'
-import CardBody from '../../components/Card/CardBody'
+import RenderForm from 'containers/RenderForm/RenderForm'
+import GridContainer from 'components/Grid/GridContainer'
+import GridItem from 'components/Grid/GridItem'
+import Card from 'components/Card/Card'
+import CardBody from 'components/Card/CardBody'
 
 // Add Captcha
 // When there is a match conformation that field should add a dependencies object to the field it needs to match
