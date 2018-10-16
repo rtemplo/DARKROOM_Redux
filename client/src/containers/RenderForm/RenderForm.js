@@ -6,7 +6,7 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import { connect } from 'react-redux'
 import * as actions from '../../store/actions/index'
 import { Mutation } from 'react-apollo'
-import DynamicFormControl from '../../components/DynamicFormControl/DynamicFormControl'
+import DynamicFormControl from '../../containers/DynamicFormControl/DynamicFormControl'
 import { checkValidity } from '../../shared/validation'
 import { camelizer } from '../../shared/camelizer'
 

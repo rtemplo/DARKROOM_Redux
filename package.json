@@ -1,18 +1,18 @@
 {
-  "name": "spectronndash",
+  "name": "darkroom_redux",
   "version": "1.0.0",
-  "description": "Spectronn Monitor Dashboard",
+  "description": "Darkroom Demo",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rtemplo/SpectronnDash.git"
+    "url": " https://github.com/rtemplo/DARKROOM_Redux.git"
   },
   "author": "Ray Templo, Andrew Apicello",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rtemplo/SpectronnDash/issues"
+    "url": "https://github.com/rtemplo/DARKROOM_Redux/issues"
   },
-  "homepage": "https://github.com/rtemplo/SpectronnDash#readme",
+  "homepage": "https://github.com/rtemplo/DARKROOM_Redux#readme",
   "scripts": {
     "server": "node index.js",
     "client": "npm run start --prefix client",
