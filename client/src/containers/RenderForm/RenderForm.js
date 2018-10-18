@@ -296,18 +296,19 @@ class RenderForm extends Component {
             if (error) return this.modalAlert("Oops! An error has occurred.", error.message)
 
             const formData = {}
-            let postgrahileCompiantKeyname = null, formElement = null
+            let postgrahileCompliantKeyname = null, formElement = null, formElementValue = null
             
             for (let formElementIdentifier in this.state.formConfig) {
               formElement = this.state.formConfig[formElementIdentifier]
+              formElementValue = this.props.formData.fields[formElementIdentifier][0]
 
               if (
-                  (formElement.nosave === undefined || (formElement.nosave && !formElement.nosave)) 
-                  && formElement.value !== ''
-                  && formElement.value !== []
+                  (formElement.nosave === undefined || (formElement.nosave && formElement.nosave === false)) 
+                  && formElementValue !== ''
+                  && formElementValue !== []
               ) {
-                postgrahileCompiantKeyname = camelizer(formElementIdentifier)
-                formData[postgrahileCompiantKeyname] = (formElement.value instanceof Array) ? formElement.value.join(',') : formElement.value
+                postgrahileCompliantKeyname = camelizer(formElementIdentifier)
+                formData[postgrahileCompliantKeyname] = (formElementValue instanceof Array) ? formElementValue.join(',') : formElementValue
               }
             }   
 
